@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main2.js" defer></script>
+    <script src="main3.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="close-popup" class="close-popup">&times;</span>
+                <p>Không tìm thấy thông tin!</p>
+            </div>
+        </div>
+        
+
+    <div class="box">
+        <div class="search-container">
+            <div class="search-form">
+                <div class="search-form__main">
+                    <div class="search-form__field">
+                        <label for="" class="search-form__label">Ngành:</label>  
+                        <select class="search-form__input" name="" id="nganh">
+                            <option value="">-- Ngành học</option>
+                            <option value="0">CNTT</option>
+                            <option value="1">KHMT</option>
+                            <option value="2">KTPM</option>
+                        </select>
+                    </div>
+
+                    <div class="search-form__field">
+                        <label for="" class="search-form__label">MSSV:</label>
+                        <input type="text" class="search-form__input" id="mssv" >
+                    </div>
+
+                    <div class="search-form__field">
+                        <label for="" class="search-form__label">CCCD:</label>
+                        <input type="text" class="search-form__input" id="cccd">
+                    </div>
+
+                    <div class="search-form__field">
+                        <button class="search-form__btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Tìm kiếm
+                        </button>
+                       
+                    </div>
+
+                    
+                </div>
+
+                <div class="search-form__option option" >
+                    <div class="option">
+                        <input type="radio" class="search-form__radio">
+                        <label for="" class=>Giấy xác nhận nghĩa vụ quân sự</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="search-form__radio">
+                        <label for="" class=>Vay vốn</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  -->
+        <div id="notification-box" style="display: none; border: 2px solid red; padding: 10px; color: red; margin-top: 10px; width: fit-content; border-radius: 5px;">
+            Không tìm thấy thông tin!
+        </div>
+        <div class="result-container">
+            <p id="notification" style="color: red;"></p> <!-- Thêm phần thông báo -->
+            <div class="table-container">
+                <table>
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>MSSV</th>
+                                <th>CCCD</th>
+                                <th>Họ và tên</th>
+                                <th>Ngày sinh</th>
+                                <th>Ngành</th>
+                                <th>Giới tính</th>
+                                <th>Địa chỉ</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+              
+              
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn-container">
+                <div class="btn">
+                    <button>
+                    <i class="fa-solid fa-file-excel"></i>
+                        Excel
+                    </button>
+                    <button> 
+                    <i class="fa-solid fa-print"></i>
+                        In
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body> 
+</html>
